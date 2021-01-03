@@ -1,0 +1,15 @@
+// NOTE 1: $(pwd) doesn't work in windows CMD use %cd%
+// NOTE 2: add c: in shared directories in docker -> settings
+
+// mounting whole directory works only if you make a copy of index.js in working directory of the host, 
+// since mounting "hides" remote directory and logging doesn't work
+ 
+docker run -v %cd%:/usr/app devopsdockeruh/first_volume_exercise 
+
+// mounting one file works only if the file exits in both (windows doesn't create files if they doesn't exit)
+
+docker run -v %cd%/logs.txt:/usr/app/logs.txt devopsdockeruh/first_volume_exercise 
+
+// using --mount works for one file only if the file exits in both (windows doesn't create files if they doesn't exit)
+
+docker run -it --mount type=bind,source=%cd%/logs.txt,target=/usr/app/logs.txt devopsdockeruh/first_volume_exercise

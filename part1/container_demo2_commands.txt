@@ -1,0 +1,6 @@
+// NOTE 1: $(pwd) doesn't work in windows CMD use %cd%
+// NOTE 2: add c: in shared directories in docker
+
+docker run -v %cd%:/mydir youtube-dl https://imgur.com/JY5tHqr
+ 
+
