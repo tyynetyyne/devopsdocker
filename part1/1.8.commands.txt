@@ -1,5 +1,5 @@
 // NOTE 1: $(pwd) doesn't work in windows CMD use %cd%
-// NOTE 2: add c: in shared directories in docker -> settings
+// NOTE 2: add c: in shared directories in docker -> settings (1.8.PNG)
 
 // mounting whole directory works only if you make a copy of index.js in working directory of the host, 
 // since mounting "hides" remote directory and logging doesn't work
