@@ -1,0 +1,7 @@
+cd container_1.10/frontend-example-docker-master
+docker build . -t front
+cd ../..
+cd container_1.11/backend-example-docker-master
+docker build . -t back
+docker run -d -v %cd%/logs.txt:/mydir/logs.txt -p 8000:8000 back
+docker run -d -p 5000:5000 front

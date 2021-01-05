@@ -1,0 +1,22 @@
+{
+  "notes": [
+    {
+      "important": false,
+      "content": "Tämä on notesdemo",
+      "date": "2021-01-05T15:34:05.272Z",
+      "id": 1
+    },
+    {
+      "important": true,
+      "content": "Tärkeä harjoitus",
+      "date": "2021-01-05T15:34:14.590Z",
+      "id": 2
+    },
+    {
+      "important": false,
+      "content": "Vaihda tärkeyttä klikkaamalla muistiinpanoa",
+      "date": "2021-01-05T15:34:28.991Z",
+      "id": 3
+    }
+  ]
+}

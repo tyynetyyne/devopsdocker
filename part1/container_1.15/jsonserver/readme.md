@@ -1,0 +1,1 @@
+npx json-server --static build --port=3001 --watch db.json

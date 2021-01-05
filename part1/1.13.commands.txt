@@ -1,0 +1,3 @@
+cd container_1.13/spring-example-project-master
+docker build . -t java
+docker run -d -p 8080:8080 java

@@ -1,3 +1,4 @@
+cd container_1.8
 // NOTE 1: $(pwd) doesn't work in windows CMD use %cd%
 // NOTE 2: add c: in shared directories in docker -> settings (1.8.PNG)
 

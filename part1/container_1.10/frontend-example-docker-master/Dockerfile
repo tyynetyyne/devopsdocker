@@ -8,4 +8,5 @@ RUN apt install -y nodejs
 RUN node -v && npm -v
 RUN npm install
 RUN npx browserslist@latest --update-db
+ENV API_URL=http://localhost:8000
 CMD npm start
