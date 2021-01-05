@@ -1,0 +1,2 @@
+docker build . -t back
+docker run -v %cd%/logs.txt:/mydir/logs.txt -p 8000:8000 back
