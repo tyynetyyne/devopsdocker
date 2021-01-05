@@ -1,3 +1,11 @@
 cd container_1.15
 docker build . -t notesdemo
 docker run -d -p 3001:3001 notesdemo
+
+//created empty repo in dockerhub with name tyynetyyne/notesdemo
+docker image tag notesdemo tyynetyyne/notesdemo
+docker login
+docker image push tyynetyyne/notesdemo
+
+//link to dockerhub:
+https://hub.docker.com/repository/docker/tyynetyyne/notesdemo
