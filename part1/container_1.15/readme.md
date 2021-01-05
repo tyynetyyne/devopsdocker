@@ -9,3 +9,7 @@ docker build . -t notesdemo
 ### Running container
 
 docker run -d -p 3001:3001 notesdemo
+
+### Using app
+
+http://localhost:3001
