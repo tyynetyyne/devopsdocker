@@ -1,0 +1,11 @@
+//logged in heroku.com created new app with name dockercourse-task
+//installed heroku cli 
+heroku login
+docker pull devopsdockeruh/heroku-example
+docker image tag devopsdockeruh/heroku-example registry.heroku.com/dockercourse-task/web
+heroku container:login
+docker image push registry.heroku.com/dockercourse-task/web
+heroku container:release web -a dockercourse-task
+
+//link to deployed app:
+https://dockercourse-task.herokuapp.com/

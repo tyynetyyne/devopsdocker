@@ -9,3 +9,6 @@ docker image push tyynetyyne/notesdemo
 
 //link to dockerhub:
 https://hub.docker.com/repository/docker/tyynetyyne/notesdemo
+
+//link to herokuapp (created with different dockerfile):
+https://notesdemo-simple.herokuapp.com/
