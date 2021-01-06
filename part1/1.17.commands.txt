@@ -1,0 +1,14 @@
+cd container_1.17
+docker build . -t node-dev
+docker run -p 22:22 -it -d node-dev
+
+//to connect via terminal
+docker exec -it <containerid> bash
+
+//publishing to dockerhub
+docker image tag node-dev tyynetyyne/node-dev
+docker login
+docker image push tyynetyyne/node-dev
+
+//node-development environment link to dockerhub:
+https://hub.docker.com/repository/docker/tyynetyyne/node-dev

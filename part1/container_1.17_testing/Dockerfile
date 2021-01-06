@@ -20,6 +20,7 @@ VOLUME [ "/var/lib/mongodb" ]
 EXPOSE 27017
 USER mongodb
 WORKDIR /var/lib/mongodb
+COPY start.sh .
 ENTRYPOINT ["/usr/bin/mongod", "--config", "/etc/mongodb.conf"]
 CMD ["--quiet"]
 
